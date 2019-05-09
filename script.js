@@ -10,3 +10,6 @@ const fenceOutputX = document.querySelector('#fenceOutputX');
 const fenceOutputY = document.querySelector('#fenceOutputY');
 const fenceOutputMax = document.querySelector('#fenceOutputMax');
 
+fenceInputLength.addEventListener('change', (e) => {
+    alert("Hello hello hello is there anybody in there")
+})
