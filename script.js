@@ -1,3 +1,12 @@
-//query selectors here
-const fenceInputLength = document.querySelector('#fenceInputLength')
-(fenceInputLength) = 100;
+//fenceCalulator input query selectors 
+
+const fenceInputLength = document.querySelector('#fenceInputLength');
+const fenceInputAreas = document.querySelector('#fenceInputAreas');
+
+//fenceCalculator output query selectors
+
+const fenceOutputAreas = document.querySelector('#fenceOutputAreas');
+const fenceOutputX = document.querySelector('#fenceOutputX');
+const fenceOutputY = document.querySelector('#fenceOutputY');
+const fenceOutputMax = document.querySelector('#fenceOutputMax');
+
