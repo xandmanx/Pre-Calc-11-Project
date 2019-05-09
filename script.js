@@ -1,3 +1,3 @@
 //query selectors here
-const fenceInputLength = document.querySelector('#fenceInputLength');
-let fenceInputLength = 100;
+const fenceInputLength = document.querySelector('#fenceInputLength')
+fenceInputLength = 100;
