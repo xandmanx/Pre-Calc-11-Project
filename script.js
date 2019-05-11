@@ -16,14 +16,18 @@ const fenceOutputMax = document.querySelector('#fenceOutputMax');
 
 fenceButton.addEventListener('click', () => {
     let b = fenceInputLength.value;
-    let a = fenceInputAreas.value;
-    let c = 2 * a;
-    let x = b / c;
-    let d = a * x;
-    let y = b - d;
+    let a = fenceInputAreas.value - -1;
+    let x = b / (2 * a);
+    let y = b - (3 * x);
     let max = x * y;
-    
 });
+
+//Unfinished output operands:
+
+fenceOutputAreas.nodeValue = a;
+fenceOutputX.nodeValue = x;
+fenceOutputY.nodeValue = y;
+fenceOutputMax.nodeValue = max; 
 
 
 
