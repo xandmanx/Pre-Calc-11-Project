@@ -21,7 +21,7 @@
                 <img id="fenceImage" src="" alt="A mathematical sketch of Guido's enclosure design.">
             <div id="fenceCalc">
                 <p id="fenceCalcDescription">Guido might be good at designing an enclosure for his animals, but he is far from a 
-                mathematician and cannot figure out the optimal <i>x</i> & <i>y</i> dimensions that would give Torstan and Theadore the
+                mathematician and cannot figure out the optimal <i>x</i> & <i>y</i> dimensions that would give Torstan and Theodore the
                 maximum area to flonder around.  Fortunately, I have built a quadratic calculator that allows Guido to input the
                 amount of fence that he has and returns the optimal <i>x</i> & <i>y</i> dimensions along with the maximum area of the enclosure.
                 I have also added an input field that modifies the number of <i>x</i>-values, in case if Guido decides to add more enclosure areas.
@@ -29,11 +29,11 @@
                 <div id="fenceCalculator">
                     <form id="fenceForm" action="">
                         <label for="fenceInputLength">Enter fence quantity in any desired units of measurement:</label>
-                        <input type="number" step="any" min = "0" placeholder="amount of fence" id="fenceInputLength" required>
+                        <input type="number" step="any" min = "0" value="100" placeholder="amount of fence" id="fenceInputLength" required>
                         <br>
                         <label for="fenceInputAreas">Enter number of enclosure areas:</label>
-                        <input type="number" step="0" min = "1" placeholder="# of areas" id="fenceInputAreas" required>
-                        <p><em>(default enclosure areas is 2)</em></p>
+                        <input type="number" step="0" min = "1" value="2" placeholder="number of areas" id="fenceInputAreas" required>
+                        <br>
                         <button id="fenceButton">Click Here To Calculate</button>
                         <p><em>(or hit enter)</em></p>
                         <br>
