@@ -68,7 +68,33 @@
                     The projected market values are represented as a ratio of variance in price per admission to variance in number of admissions. 
                 </p>
                 <div id="revenueCalculator">
-                    
+                    <form id="revenueForm" action="">
+                        <label for="revenueInputCost">Current price per admission: $</label>
+                        <input type="number" step="0.01" min = "0" value="20" placeholder="cost" id="revenueInputCost" required>
+                        <br>
+                        <label for="revenueInputAdmin">Current numer of admissions:</label>
+                        <input type="number" step="0" min = "1" value="30" placeholder="people" id="revenueInputAdmin" required>
+                        <br>
+                        <p><em>(Please note that one of the below values must be positive and the other must be negative.)</em></p>
+                        <label for="revenueMarketCost">Projected price variance: $</label>
+                        <input type="number" step="0.01" min="0" value="2" placeholder="cost diff." id="revenueMarketCost" required>
+                        <br>
+                        <label for="revenueMarketAdmin">Projected admissions variance:</label>
+                        <input type="number" step="0" value="-4" placeholder="people diff." id="revenueMarketAdmin" required>
+                        <br>
+                        <button id="revenueButton">Click Here To Calculate</button>
+                        <p><em>(or hit enter)</em></p>
+                        <br>
+                        <label for="revenueOutputCost">Optimal price per admission: $</label>
+                        <output id="revenueOutputCost"></output>
+                        <br>
+                        <label for="revenueOutputAdmin">Optimized number of admissions:</label>
+                        <output id="fenceOutputY"></output>
+                        <br>
+                        <label for="revenueOutputMax">Optimized max revenue: $</label>
+                        <output id="revenueOutputMax"></output>
+                        <br>
+                    </form>                        
                 </div>
             </div>
         </div>
