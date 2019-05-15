@@ -65,19 +65,19 @@ revenueButton.addEventListener('click', () => {
     let a = q * p;
     let b = (q * z) + (k * p);
     let c = k * z;
-    let d = b / (2 * a);
-    let e = c - ((b * b) / (4 * a));
-    let f = e / d;
+    let d = Math.round((b / (2 * a)) * 100) / 100;
+    let e = c - ((Math.pow(b, 2)) / (4 * a));
+    let f = Math.floor(e / d);
+    let g = (f * d);
     let r = k % 1;
     let s = z % 1;
 
-
     //only runs output if values are within real parameters
     
-    if (k > -0.999999999 && r < 99 && z > 1 && s == 0) {
-        revenueOutputCost.textContent = d;
-        revenueOutputAdmin.textContent = e;
-        revenueOutputMax.textContent = f;
+    if (k > -0.999999999 && r < 0.99 && z > 1 && s == 0 && e > 0 && q != 0 && p != 0 && d != 0) {
+        revenueOutputCost.textContent = Math.abs(d);
+        revenueOutputAdmin.textContent = Math.abs(f);
+        revenueOutputMax.textContent = g;
     } else {
         alert("Please enter a valid number.");
     };
