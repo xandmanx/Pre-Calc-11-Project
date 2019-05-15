@@ -33,10 +33,43 @@ fenceButton.addEventListener('click', () => {
     };
 });
 
-
 //prevents page from refreshing upon calculation
 
 fenceForm.addEventListener('submit', function(fenceForm){fenceForm.preventDefault();});
+
+
+
+//revenueCalculator input query selectors
+
+const revenueForm = document.querySelector('#revenueForm');
+const revenueInputCost = document.querySelector('#revenueInputCost');
+const revenueInputAdmin = document.querySelector('#revenueInputAdmin');
+const revenueMarketCost = document.querySelector('#revenueMarketCost');
+const revenueMarketAdmin = document.querySelector('#revenueMarketAdmin');
+const revenueCalculator = document.querySelector('#revenueCalculator');
+const revenueButton = document.querySelector('#revenueButton');
+
+//revenueCalculator output query selectors
+
+const revenueOutputCost = document.querySelector('#revenueOutputCost');
+const revenueOutputAdmin = document.querySelector('#revenueOutputAdmin');
+const revenueOutputMax = document.querySelector('#revenueOutputMax');
+
+//revenueCalculator main function
+
+revenueButton.addEventListener('click', () => {
+    let k = revenueInputCost.value;
+    let z = revenueInputAdmin.value;
+    let q = revenueMarketCost.value;
+    let p = revenueMarketAdmin.value;
+    let a = q * p;
+    let b = (q * z) + (k * p);
+    let c = k * z;
+    let d = b / (2 * a);
+    let e = c - ((b * b) / (4 * a));
+    let f = e / d;
+});
+
 
 
 
