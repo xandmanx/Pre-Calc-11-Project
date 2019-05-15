@@ -68,7 +68,19 @@ revenueButton.addEventListener('click', () => {
     let d = b / (2 * a);
     let e = c - ((b * b) / (4 * a));
     let f = e / d;
+    let r = k % 1;
+    let s = z % 1;
+
+
+    //only runs output if values are within real parameters
     
+    if (k > -0.999999999 && r < 99 && z > 1 && s == 0) {
+        revenueOutputCost.textContent = d;
+        revenueOutputAdmin.textContent = e;
+        revenueOutputMax.textContent = f;
+    } else {
+        alert("Please enter a valid number.");
+    };
 });
 
 //prevents page from refreshing upon calculation
