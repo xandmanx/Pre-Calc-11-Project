@@ -68,8 +68,12 @@ revenueButton.addEventListener('click', () => {
     let d = b / (2 * a);
     let e = c - ((b * b) / (4 * a));
     let f = e / d;
+    
 });
 
+//prevents page from refreshing upon calculation
+
+revenueForm.addEventListener('submit', function(revenueForm){revenueForm.preventDefault();});
 
 
 
