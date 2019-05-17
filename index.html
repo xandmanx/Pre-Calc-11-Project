@@ -37,6 +37,12 @@
                         <button id="fenceButton">Click Here To Calculate</button>
                         <p><em>(or hit enter)</em></p>
                         <br>
+                        <p>
+                            The below values represent what the <i>x</i> and <i>y</i> values should equal in order to achieve the maximum area.
+                            Please keep in mind that there is only one <i>y</i> value because there is a cliff on one side of Guido’s enclosure.
+                            The number of <i>x</i> values are defined based on the number of enclosure areas allocated.
+                        </p>
+                        <br>
                         <label for="fenceOutputX">Optimal <i>x</i> Dimension =</label>
                         <output id="fenceOutputX"></output>
                         <br>
@@ -63,9 +69,13 @@
                 </p>
                 <img id="revenueImage" src="" alt="A mathematical sketch of Guido's revenue.">
             <div id="revenueCalc">
-                <p id="revenueCalcDescription">Guido's revenue is represented as price per admission times number of admissions.  To calculate Guido's
+                <p id="revenueCalcDescription">Guido's revenue is represented as price per admission times number of admissions.  Guido's max revenue
+                    is represented as a quadratic function.  I have simplified the method of "completing the square" into a series of algebraic
+                    equations so that anyone can solve for Guido's max revenue without any knowledge on how quadratics work.  To calculate Guido's
                     max revenue, enter Guido's current price per admission and current number of admissions along with the projected market values.
-                    The projected market values are represented as a ratio of variance in price per admission to variance in number of admissions. 
+                    The projected market values are represented as a ratio of variance in price per admission to variance in number of admissions.
+                    For example, the default projected market values represent that for every $2 increase in price, 4 less people visit Guido’s zoo.
+                    This is also the equivalent of "for every $2 <strong>decrease</strong> in price, 4 <strong>more</strong> people visit Guido's zoo". 
                 </p>
                 <div id="revenueCalculator">
                     <form id="revenueForm" action="">
@@ -95,18 +105,6 @@
                         <output id="revenueOutputMax"></output>
                         <br>
                     </form>                        
-                </div>
-            </div>
-        </div>
-
-        <div id="projectile">
-                <p id="projectileDescription"><!--Description of Guido's projectile problem here--></p>
-                <img id="projectileImage" src="" alt="A mathematical sketch of Guido's projectile.">
-            <div id="projectileCalc">
-                <p id="projectileCalcDescription"><!--Description of projectile calculator here-->
-                </p>
-                <div id="projectileCalculator">
-                    <!--Build the projectile calculator and put it in this div-->
                 </div>
             </div>
         </div>
