@@ -45,11 +45,16 @@ footer {
 }
 
 video {
-
+    width: 500px;
+    height: 100px;
 }
 
 address {
+    float : right;
+}
 
+a {
+    vertical-align: 60px;
 }
 
 .block {
@@ -63,6 +68,10 @@ address {
     text-align: left;
     padding: 4px;
     animation: anime2 30s cubic-bezier(0, 0, 0, 0) 0s infinite alternate forwards running;
+}
+
+.foot-label {
+    vertical-align: 40px;
 }
   
 
