@@ -1,55 +1,104 @@
 body {
-    background-color: black;
-    color: orange;
+    color: black;
     text-align: center;
     border-color: transparent;
     border-width: 30px;
     border-style: solid;
-};
+    animation: anime 30s cubic-bezier(0, 0, 0, 0) 0s infinite alternate forwards running;
+}
 
 h1 {
-
-};
+    
+}
 
 img {
-    border-color: orange;
+    border-color: black;
     border-width: 10px;
     border-style: solid;
     border-radius: 20px;
-    max-width: 35px;
+    max-width: 800px;
     display: block;
     margin: auto;
     height: auto;
-};
+    animation: anime2 30s cubic-bezier(0, 0, 0, 0) 0s infinite alternate forwards running;
+}
 
 p {
 
-};
+}
 
 ul {
 
-};
+}
 
 li {
 
-};
+}
 
 label, output, #label {
-
-};
+    font-weight: bold;
+    font-size: 20px;
+}
 
 footer {
 
-};
+}
 
 video {
 
-};
+}
 
 address {
 
-};
+}
 
-#block {
+.block {
+    background-color: white;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: auto;
+    height: auto;
+    text-align: left;
+    padding: 4px;
+    animation: anime2 30s cubic-bezier(0, 0, 0, 0) 0s infinite alternate forwards running;
+}
+  
 
-};
+@keyframes anime {
+    0% {
+    background-color: red;
+    }
+    25% {
+    background-color: yellow;
+    }
+    50% {
+    background-color: green;
+    }
+    75% {
+    background-color: blue;
+    }
+    100% {
+    background-color: white;
+    }
+  }
+
+    @keyframes anime2 {
+  0% {
+  border-color: white;
+  }
+  25% {
+  border-color: blue;
+  }
+  50% {
+  border-color: green;
+  }
+  75% {
+  border-color: yellow;
+  }
+  100% {
+  border-color: red;
+  }
+}
+
