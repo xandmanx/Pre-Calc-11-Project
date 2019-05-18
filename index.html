@@ -16,8 +16,8 @@
             well as preventing them from wandering off into the wilderness.
         </p>
 
-        <div id="fence">
-                <p id="fenceDescription">The enclosure was designed as follows:</p>
+        <div id="fence" class="block">
+                <p id="fenceDescription" class="label">The enclosure was designed as follows:</p>
                 <img id="fenceImage" src="https://live.staticflickr.com/65535/33994730938_d11dadc04c_k.jpg>" alt="A mathematical sketch of Guido's enclosure design.">
             <div id="fenceCalc">
                 <p id="fenceCalcDescription">Guido might be good at designing an enclosure for his animals, but he is far from a 
@@ -27,7 +27,7 @@
                 I have also added an input field that modifies the number of <i>x</i>-values, in case if Guido decides to add more enclosure areas.
             </p>
             <ul>
-                Fence Calculator Restraints:
+                <div>Fence Calculator Restraints:</div>
                 <li>values can't be negative</li>
                 <li>fence quantity may be a decimal</li>
                 <li>enclosure areas must be a whole number greater than 0</li>
@@ -63,7 +63,7 @@
             </div>
         </div>
 
-        <div id="revenue">
+        <div id="revenue" class="block">
                 <p id="revenueDescription">Guido is satisfied with his enclosure since he can be certain that he has granted
                     Torstan and Theodore the maximum area to roam around.  However, Guido soon came to find that it is very expensive
                     to keep a monkey given the cost of bananas these days.  Guido decided that the best way to fund his exotic animals
@@ -136,4 +136,20 @@
 
         <script src="script.js"></script>
     </body>
+    <hr>
+    <footer>
+        <label for="video">Code Review:</label>
+        <br>
+        <video controls width="250">
+                    <source src="/media/examples/flower.webm"
+                    type="video/webm">
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+        <br>
+        <address>
+            <a href="https://github.com/xandmanx/Pre-Calc-11-Project">Source Code On Github</a>
+            <br>
+            <a href="mailto:xfacter02@gmail.com">Contact Me Via E-mail</a>
+        </address>
+    </footer>
 </html> 

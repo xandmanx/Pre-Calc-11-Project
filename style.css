@@ -1,0 +1,55 @@
+body {
+    background-color: black;
+    color: orange;
+    text-align: center;
+    border-color: transparent;
+    border-width: 30px;
+    border-style: solid;
+};
+
+h1 {
+
+};
+
+img {
+    border-color: orange;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 20px;
+    max-width: 35px;
+    display: block;
+    margin: auto;
+    height: auto;
+};
+
+p {
+
+};
+
+ul {
+
+};
+
+li {
+
+};
+
+label, output, #label {
+
+};
+
+footer {
+
+};
+
+video {
+
+};
+
+address {
+
+};
+
+#block {
+
+};
