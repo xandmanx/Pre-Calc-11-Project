@@ -26,6 +26,12 @@
                 amount of fence that he has and returns the optimal <i>x</i> & <i>y</i> dimensions along with the maximum area of the enclosure.
                 I have also added an input field that modifies the number of <i>x</i>-values, in case if Guido decides to add more enclosure areas.
             </p>
+            <ul>
+                Fence Calculator Restraints:
+                <li>values can't be negative</li>
+                <li>fence quantity may be a decimal</li>
+                <li>enclosure areas must be a whole number greater than 0</li>
+            </ul>
                 <div id="fenceCalculator">
                     <form id="fenceForm" action="">
                         <label for="fenceInputLength">Enter fence quantity in any desired units of measurement:</label>
@@ -77,6 +83,15 @@
                     For example, the default projected market values represent that for every $2 increase in price, 4 less people visit Guido’s zoo.
                     This is also the equivalent of "for every $2 <strong>decrease</strong> in price, 4 <strong>more</strong> people visit Guido's zoo". 
                 </p>
+                <ul>
+                    Revenue Calculator Restraints:
+                    <li>first two values must be positive</li>
+                    <li>prices, if fractional, must be rounded to the nearest hundredth</li>
+                    <li>admission quantities must be whole numbers</li>
+                    <li>only the first value may equal 0</li>
+                    <li>one of the last two values must be negative</li>
+                    <li>one of the last two values must be positive</li>
+                </ul>
                 <div id="revenueCalculator">
                     <form id="revenueForm" action="">
                         <label for="revenueInputCost">Current price per admission: $</label>
@@ -94,6 +109,15 @@
                         <br>
                         <button id="revenueButton">Click Here To Calculate</button>
                         <p><em>(or hit enter)</em></p>
+                        <br>
+                        <p>
+                            The below values represent the price that Guido should sell each admission at, the number of admissions yielded as a result of
+                            the new price per admission, and the maximum revenue achieved when selling admissions to his zoo at the specified cost.  Please
+                            keep in mind that depending on which values you enter in the calculator, the output may not be what was necessarily expected, this 
+                            is because the calculator accounts for real world values such as price decimals only go to two places, and you can't sell
+                            a fraction of an admission.  Also keep in mind that "<i>x</i> price increase = <i>y</i> admissions decrease", is the same 
+                            as "<i>x</i> price decrease = <i>y</i> admissions increase".
+                        </p>
                         <br>
                         <label for="revenueOutputCost">Optimal price per admission: $</label>
                         <output id="revenueOutputCost"></output>
