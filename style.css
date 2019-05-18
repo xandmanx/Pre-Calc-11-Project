@@ -99,23 +99,22 @@ a {
     100% {
     background-color: white;
     }
-  }
-
-    @keyframes anime2 {
-  0% {
-  border-color: white;
-  }
-  25% {
-  border-color: blue;
-  }
-  50% {
-  border-color: green;
-  }
-  75% {
-  border-color: yellow;
-  }
-  100% {
-  border-color: red;
-  }
 }
 
+@keyframes anime2 {
+    0% {
+    border-color: white;
+    }
+    25% {
+    border-color: blue;
+    }
+    50% {
+    border-color: green;
+    }
+    75% {
+    border-color: yellow;
+    }
+    100% {
+    border-color: red;
+    }
+}
