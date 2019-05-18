@@ -16,7 +16,7 @@ h1 {
     border-width: 10px;
     border-style: solid;
     border-radius: 20px;
-    max-width: 800px;
+    max-width: 60%;
     margin: auto;
     animation: anime2 30s cubic-bezier(0, 0, 0, 0) 0s infinite alternate forwards running;
 }
@@ -25,7 +25,7 @@ img {
     border-width: 10px;
     border-style: solid;
     border-radius: 20px;
-    max-width: 800px;
+    max-width: 60%;
     display: block;
     margin: auto;
     height: auto;
@@ -54,12 +54,9 @@ label, output, #label {
     font-size: 20px;
 }
 
-footer {
-
-}
-
 video {
-    width: 486px;
+    width: 65%;
+    max-width: 100%;
     height: 100px;
 }
 
@@ -78,7 +75,7 @@ a {
     border-width: 10px;
     border-style: solid;
     border-radius: 20px;
-    max-width: 800px;
+    max-width: 60%;
     margin: auto;
     height: auto;
     text-align: left;
