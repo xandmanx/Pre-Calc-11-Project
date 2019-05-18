@@ -2,11 +2,12 @@
 <html>
     <head>
         <link href="style.css" type="text/css" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Shojumaru&display=swap" rel="stylesheet">
         <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/e/ea/Barn_icon.png">
         <title>Guido's Zoo</title>
     </head>
     <body>
-        <h1>Welcome to Guido's Zoo!</h1>
+        <h1>Guido's Quadratic Calculator</h1>
         <hr>
         <img src="https://live.staticflickr.com/65535/47082962974_94332cc392_k.jpg" alt="Supposed to be an image of Guido and his farm here.">
         <br>
@@ -31,14 +32,15 @@
                 I have also added an input field that modifies the number of <i>x</i>-values, in case if Guido decides to add more enclosure areas.
             </p>
             <ul>
-                <div>Fence Calculator Restraints:</div>
+                <div>Fence Calculator Parameters:</div>
                 <li>values can't be negative</li>
                 <li>fence quantity may be a decimal</li>
-                <li>enclosure areas must be a whole number greater than 0</li>
+                <li>enclosure areas must be a whole number greater than zero</li>
+                <li>fence quantity may be any percieved unit of measurement</li>
             </ul>
                 <div id="fenceCalculator">
                     <form id="fenceForm" action="">
-                        <label for="fenceInputLength">Enter fence quantity in any desired units of measurement:</label>
+                        <label for="fenceInputLength">Enter fence quantity:</label>
                         <input type="number" step="any" min = "0" value="100" placeholder="amount of fence" id="fenceInputLength" required>
                         <br>
                         <label for="fenceInputAreas">Enter number of enclosure areas:</label>
@@ -92,7 +94,7 @@
                     This is also the equivalent of "for every $2 <strong>decrease</strong> in price, 4 <strong>more</strong> people visit Guido's zoo". 
                 </p>
                 <ul>
-                    Revenue Calculator Restraints:
+                    Revenue Calculator Parameters:
                     <li>first two values must be positive</li>
                     <li>prices, if fractional, must be rounded to the nearest hundredth</li>
                     <li>admission quantities must be whole numbers</li>
@@ -103,14 +105,14 @@
                 </ul>
                 <div id="revenueCalculator">
                     <form id="revenueForm" action="">
-                        <label for="revenueInputCost">Current price per admission: $</label>
+                        <label for="revenueInputCost">Current price per admission: <i>$</i></label>
                         <input type="number" step="0.01" min = "0" value="20" placeholder="cost" id="revenueInputCost" required>
                         <br>
                         <label for="revenueInputAdmin">Current numer of admissions:</label>
                         <input type="number" step="0" min = "1" value="30" placeholder="people" id="revenueInputAdmin" required>
                         <br>
                         <p><em>(Please note that one of the below values must be positive and the other must be negative.)</em></p>
-                        <label for="revenueMarketCost">Projected price variance: $</label>
+                        <label for="revenueMarketCost">Projected price variance: <i>$</i></label>
                         <input type="number" step="0.01" value="2" placeholder="cost diff." id="revenueMarketCost" required>
                         <br>
                         <label for="revenueMarketAdmin">Projected admissions variance:</label>
