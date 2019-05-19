@@ -4,7 +4,7 @@ body {
     border-color: transparent;
     border-width: 10px;
     border-style: solid;
-    animation: anime 30s cubic-bezier(0, 0, 0, 0) 0s infinite alternate forwards running;
+    animation: anime 60s cubic-bezier(0, 0, 0, 0) 0s infinite alternate forwards running;
     font-family: 'Open Sans', sans-serif;
     font-weight: 550;
 }
@@ -18,7 +18,7 @@ h1 {
     border-radius: 20px;
     max-width: 60%;
     margin: auto;
-    animation: anime2 30s cubic-bezier(0, 0, 0, 0) 0s infinite alternate forwards running;
+    animation: anime2 60s cubic-bezier(0, 0, 0, 0) 0s infinite alternate forwards running;
 }
 
 img {
@@ -29,7 +29,7 @@ img {
     display: block;
     margin: auto;
     height: auto;
-    animation: anime2 30s cubic-bezier(0, 0, 0, 0) 0s infinite alternate forwards running;
+    animation: anime2 60s cubic-bezier(0, 0, 0, 0) 0s infinite alternate forwards running;
 }
 
 p {
@@ -79,7 +79,7 @@ a {
     height: auto;
     text-align: left;
     padding: 6px;
-    animation: anime2 30s cubic-bezier(0, 0, 0, 0) 0s infinite alternate forwards running;
+    animation: anime2 60s cubic-bezier(0, 0, 0, 0) 0s infinite alternate forwards running;
 }
 
 .foot-label {
@@ -95,7 +95,7 @@ a {
     background-color: yellow;
     }
     50% {
-    background-color: green;
+    background-color: lime;
     }
     75% {
     background-color: blue;
@@ -113,7 +113,7 @@ a {
     border-color: blue;
     }
     50% {
-    border-color: green;
+    border-color: lime;
     }
     75% {
     border-color: yellow;
