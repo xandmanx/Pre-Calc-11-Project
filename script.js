@@ -65,9 +65,11 @@ revenueButton.addEventListener('click', () => {
     let a = q * p;
     let b = (q * z) + (k * p);
     let c = k * z;
-    let d = Math.abs(Math.round((b / (2 * a)) * 100) / 100);
+    let x = Math.abs(Math.round((b / (2 * a)) * 100) / 100);
+    let d = k - -(q * x);
     let e = c - ((Math.pow(b, 2)) / (4 * a));
-    let f = Math.floor(e / d);
+    let y = Math.floor(e / x);
+    let f = z - -(p * x);
     let g = Math.round((e) * 100) / 100;
     let r = p % 1;
     let s = z % 1;
@@ -80,7 +82,7 @@ revenueButton.addEventListener('click', () => {
        revenueOutputCost.textContent = k;
        revenueOutputAdmin.textContent = z;
        revenueOutputMax.textContent = g;
-    } else if (k > -0.999999999 && z > 0 && s == 0 && r == 0 && e > 0 && p != 0  && q != 0 && d != 0 && t < 0.991 && u < 0.991) {
+    } else if (k > -0.999999999 && z > 0 && s == 0 && r == 0 && e > 0 && p != 0  && q != 0 && x != 0 && t < 0.991 && u < 0.991) {
         revenueOutputCost.textContent = d;
         revenueOutputAdmin.textContent = f;
         revenueOutputMax.textContent = g;
