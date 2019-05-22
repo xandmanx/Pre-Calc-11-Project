@@ -77,11 +77,7 @@ revenueButton.addEventListener('click', () => {
 
     //only runs output if values are within real parameters
     
-    if (e == c) { //tests if optimal revenue has already been achieved
-       revenueOutputCost.textContent = k;
-       revenueOutputAdmin.textContent = z;
-       revenueOutputMax.textContent = g;
-    } else if (k > -0.999999999 && z > 0 && s == 0 && r == 0 && e > 0 && p != 0  && q != 0 && x != 0 && t < 0.991 && u < 0.991) {
+    if (k > -0.999999999 && z > 0 && s == 0 && r == 0 && e > 0 && p != 0  && q != 0 && x != 0 && t < 0.991 && u < 0.991) {
         revenueOutputCost.textContent = Math.abs(d);
         revenueOutputAdmin.textContent = Math.abs(f);
         revenueOutputMax.textContent = g;
